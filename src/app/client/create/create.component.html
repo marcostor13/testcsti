@@ -1,0 +1,33 @@
+<div class="bg-color1 vh-100 vw-100 p-5 row m-0 justify-content-center align-items-center">
+
+    <div class="row bg-white col-12 col-xl-6 pb-5">
+
+        <div class="col-12 row m-0 justify-content-center mt-5">
+            <img width ="200" src="https://csticorp.biz/wp-content/uploads/2019/05/Logo-CSTI-8.png" alt="CSTI">
+        </div>
+
+        <div class="col-12 row m-0 justify-content-center mt-5">
+            <h1 class="text-color1">Test Angular</h1>
+        </div>
+
+        <div class="col-12 row m-0 justify-content-center mt-5">
+            <input class="col-12 p-0 form-control mt-2 pl-4" [(ngModel)]="name" type="text" placeholder="Nombre"/>
+            <input class="col-12 p-0 form-control mt-2 pl-4" [(ngModel)]="lastname" type="text" placeholder="Apellido"/>
+            <input  class="col-12 p-0 form-control mt-2 pl-4" [(ngModel)]="age" type="number" placeholder="Edad"/>
+            <input class="col-12 p-0 form-control mt-2 pl-4" [(ngModel)]="dateofbirth" type="text" placeholder="Fecha de nacimiento"/>
+            <button (click)="save()" class="col-12 p-0 border-0 rounded bg-color1 mt-2 pt-2 pb-2 text-white">Guardar</button>
+        </div>
+
+        <div class="col-12 row m-0 justify-content-center mt-5">
+            <span class="text-color1">{{response}}</span>
+        </div>
+
+        <div class="col-12 row m-0 justify-content-center mt-5">
+            <div  class="cursor text-color2 border p-2" [routerLink]="['/client/list']">Ir a lista de clientes</div>
+        </div>
+
+        
+
+    </div>
+
+</div>
